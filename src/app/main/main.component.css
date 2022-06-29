@@ -1,0 +1,26 @@
+/* .sidebar-container {
+    display: flex;
+} */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 75px;
+    overflow: auto;
+    min-width: 240px;
+}
+
+
+.router {
+    margin-top: 75px;
+    margin-left: 240px;
+}

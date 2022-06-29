@@ -1,0 +1,57 @@
+h4 {
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.createPost {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 0 2px 2px #0a10143d, 0 0 2px #0a10141f;
+    transition: box-shadow 0.5s;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+input {
+    padding: 5px 10px;
+    margin-right: 20px;
+    font-size: 17px;
+    display: block;
+    margin: 10px;
+    width: 90%;
+}
+
+
+.body {
+    border-bottom: 1px solid #DBDBDB;
+    padding: 10px;
+}
+
+.title {
+    border-bottom: 1px solid #DBDBDB;
+    padding: 10px;
+    background-color: #1976d21a;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.submit {
+    background-color: #1976d21a;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submitBtn {
+    border: transparent;
+    outline: none;
+    width: 100%;;
+    background-color: transparent;
+    cursor: pointer;
+}

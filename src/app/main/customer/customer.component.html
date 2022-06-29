@@ -1,0 +1,31 @@
+<div class="main-container">
+    <div class="creatPost" routerLink="../createpost">
+        <h3>Create a Post</h3>
+    </div>
+    
+
+    <div class="post" *ngFor="let post of posts | async" [routerLink]="['../post', post._id]">
+        <div class="title">
+            <h3>{{post.title}}</h3>
+        </div>
+        <div class="body">
+            <p>{{post.description}}
+            </p>
+        </div>
+        <div class="user-detail">
+            <div class="user">
+                <h4>Created By:&nbsp;</h4>
+                <h4 *ngIf="post.user == null">No User Found
+                </h4>
+                <h4 *ngIf="post.user != null">
+                    <h4 *ngIf="post.user.name != null">{{post.user.name}}</h4>
+                    <h4 *ngIf="post.user.name == null">No User Name Found</h4>
+                </h4>
+            </div>
+            <div class="date">
+                <h4>Updated on:&nbsp;</h4>
+                <h4>{{(post.updated_at | date) || 'No User Found'}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

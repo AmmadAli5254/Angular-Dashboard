@@ -1,0 +1,12 @@
+<div class="menu">
+    <div class="na-brand">
+        <h2>Angular Basic App</h2>
+    </div>
+    <div class="na-item1">
+        <input type="text" placeholder="Search" class="input" (keyup)="setSearchValue()" [(ngModel)]="value">
+    </div>
+    <div class="na-item2">
+            <h3>{{userName}}</h3>
+            <h3 (click)='logOut()'>Logout</h3>
+    </div>
+</div>
