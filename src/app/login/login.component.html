@@ -1,0 +1,19 @@
+<div class="login-container">
+    <div class="content">
+        <div class="top">
+            <h2>WELCOME TO MY APP</h2>
+        </div>
+        <form [formGroup]="loginForm" (submit)="logIn()">
+            <div class="data">
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Enter Email" formControlName="email">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Password" formControlName="password">
+            </div>
+            <div class="submit">
+                <button>Login</button>
+                <p>doesn't have acount please <a routerLink="/signup">signup</a> here </p>
+            </div>
+        </form>
+    </div>
+</div>

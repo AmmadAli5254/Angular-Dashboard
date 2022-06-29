@@ -1,0 +1,30 @@
+.content {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.table-wrapper {
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(1) {
+    font-weight: 600;
+}
+
+td:nth-child(1) {
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+}
+.sortName {
+    cursor: pointer;
+}
+
+
+
