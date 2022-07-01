@@ -1,11 +1,31 @@
-<div class="content">
-    <h1>This is Account Component</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, numquam ratione. Commodi quidem ex cum tempore?
-        Suscipit, harum enim, aliquid accusamus inventore doloremque maiores dolore excepturi quas a, itaque placeat
-        quia facere eaque qui modi velit omnis. Laborum, excepturi enim. Labore, deserunt doloribus quisquam quibusdam
-        accusamus ad tempore praesentium numquam provident, similique dolor aut vero nobis obcaecati adipisci neque
-        beatae. Eveniet veniam atque nulla dolores, quae eligendi repellendus expedita, ab, laborum nisi totam eius.
-        Accusantium quis, perferendis amet eum, impedit voluptatum eos minima repellendus magni nostrum architecto
-        corrupti et iste, obcaecati incidunt aperiam odio veritatis officia explicabo! Praesentium, facere
-        necessitatibus.</p>
+<div class="main-container">
+    <div class="createUser" routerLink="../createuser">
+        <h3>Create a User</h3>
+    </div>
+
+
+    <div class="user" *ngFor="let user of users | async" [routerLink]="['../user', user._id]">
+        <div class="title">
+            <h3>{{user.title}}</h3>
+        </div>
+        <div class="body">
+            <p>{{user.description}}
+            </p>
+        </div>
+        <div class="user-detail">
+            <div class="user">
+                <h4>Created By:&nbsp;</h4>
+                <h4 *ngIf="user.user == null">No User Found
+                </h4>
+                <h4 *ngIf="user.user != null">
+                    <h4 *ngIf="user.user.name != null">{{user.user.name}}</h4>
+                    <h4 *ngIf="user.user.name == null">No User Name Found</h4>
+                </h4>
+            </div>
+            <div class="date">
+                <h4>Updated on:&nbsp;</h4>
+                <h4>{{(user.updated_at | date) || 'No User Found'}}</h4>
+            </div>
+        </div>
+    </div>
 </div>

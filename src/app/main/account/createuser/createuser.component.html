@@ -1,0 +1,31 @@
+<form [formGroup]="userDetail" (ngSubmit)="submit()">
+    <div class="container">
+        <div class="createUser">
+            <div class="title">
+                <h3>USERS DETAILS</h3>
+            </div>
+            <div class="body">
+                <div class="leftSide">
+                    <input type="text" placeholder="User Name" formControlName="name" required/>
+                    <input type="text" placeholder="Email" formControlName="email" required/>
+                    <input type="password" placeholder="Password" formControlName="password" required/>
+                </div>
+                <div class="rightSide">
+                    <label for="image">Image:</label>
+                    <input type="file" formControlName="image" id="image" (change)="onSelectImg($event)" #imgInput required/>
+                    <img [src]="imgUrl" alt="" #imgTag>
+                    <label for="status">Status:</label>
+                    <select name="status" id="status" formControlName="status" required>
+                        <option value="true" selected>Show</option>
+                        <option value="false">Hide</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit" class="submitBtn">
+                    <h3>CREATE A USER</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
