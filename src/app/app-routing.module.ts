@@ -14,6 +14,7 @@ import { RouterGuard } from './auth/router.guard';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PostdetailsComponent } from './main/customer/postdetails/postdetails.component';
 import { CreatpostComponent } from './main/customer/creatpost/creatpost.component';
+import { CreateuserComponent } from './main/account/createuser/createuser.component';
 
 const routes: Routes = [
   
@@ -31,7 +32,8 @@ const routes: Routes = [
       { path: 'contactus', component: ContactusComponent },
       { path: 'aboutus', component: AboutusComponent },
       { path: 'post/:id', component: PostdetailsComponent },
-      { path: 'createpost', component: CreatpostComponent }
+      { path: 'createpost', component: CreatpostComponent },
+      { path: 'createuser', component: CreateuserComponent }
     ]
 
   },

@@ -28,6 +28,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { reducer } from './poststate/post.reducer';
 import { PostApiEffectsService } from './poststate/post-api-effects.service';
+import { CreateuserComponent } from './main/account/createuser/createuser.component';
 
 
 @NgModule({
@@ -49,7 +50,7 @@ import { PostApiEffectsService } from './poststate/post-api-effects.service';
     PagenotfoundComponent,
     PostdetailsComponent,
     CreatpostComponent,
-  
+    CreateuserComponent,  
   ],
   imports: [
     BrowserModule,

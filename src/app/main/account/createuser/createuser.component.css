@@ -1,0 +1,85 @@
+h4 {
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.createUser {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 0 2px 2px #0a10143d, 0 0 2px #0a10141f;
+    transition: box-shadow 0.5s;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+input,
+select {
+    padding: 5px 10px;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type=file] {
+    padding: 0px;
+}
+
+label[for=image] {
+    margin-top: 10px;
+}
+
+.body {
+    border-bottom: 1px solid #DBDBDB;
+
+    display: flex;
+
+}
+
+.leftSide {
+    flex-basis: 70%;
+    padding: 20px;
+}
+
+img {
+    display: none;
+    height: 44px;
+    width: 100%;
+}
+
+.rightSide {
+    padding: 20px;
+    padding-top: 25px;
+}
+
+.title {
+    border-bottom: 1px solid #DBDBDB;
+    padding: 10px;
+    background-color: #1976d21a;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.submit {
+    background-color: #1976d21a;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submitBtn {
+    border: transparent;
+    outline: none;
+    width: 100%;
+    ;
+    background-color: transparent;
+    cursor: pointer;
+}
